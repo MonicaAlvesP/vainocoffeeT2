@@ -18,11 +18,12 @@ header {
 section {
   background-color: #8F6448;
   border: solid 1px black;
-  margin: 50px 20px;
+  margin: 50px 40px;
   // margin: top right bottom left;
-  padding: 50px;
+  padding-left: 35px;
 
   figure {
+    margin-top: 30px;
 
     img {
       width: 120px;
@@ -31,16 +32,16 @@ section {
     figcaption {
       font-size: 20px;
       font-weight: bold;
+      padding-left: 20px;
     }
   }
 
   button {
-    margin: 20px 0;
-    padding: 15px;
+    margin: 20px 10px;
+    padding: 10px;
     background-color: rgb(207, 52, 52);
     color: white;
     border: none;
-    cursor: pointer;
     border-radius: 10px;
   }
 }
