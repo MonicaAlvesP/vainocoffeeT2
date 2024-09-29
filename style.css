@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,38 +7,207 @@
 }
 
 header {
-  display: flex;
-  background-color: #34261D;
-  height: 70px;
-  padding-left: 20px;
-  gap: 200px;
-  color: white;
-  align-items: center;
-  font-family: cursive;
+  position: relative;
+  background-image: url("https://images.nightcafe.studio/jobs/nfDGYhd11hMKdAxZ5KXy/nfDGYhd11hMKdAxZ5KXy--1--posam.jpg?tr=w-1600,c-at_max");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  z-index: 1;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
-section {
-  background-color: #8F6448;
-  border: solid 1px black;
-  margin: 50px 40px;
-  padding-left: 35px;
+.menu-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Quicksand", sans-serif;
 }
-section figure {
-  margin-top: 30px;
+.menu-nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 5rem;
 }
-section figure img {
-  width: 120px;
+.menu-nav ul a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
-section figure figcaption {
-  font-size: 20px;
-  font-weight: bold;
+.menu-nav ul a:hover {
+  color: #f1c40f;
+}
+
+.price-button {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #f1c40f;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.price-button:hover {
+  background-color: #d10f0f;
+  color: #f1c40f;
+}
+.price-button a {
+  color: #000;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+}
+.price-button a:hover {
+  color: #f1c40f;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+}
+.header-content h1 {
+  font-family: "Lobster Two", system-ui;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ECB712;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9), 2px 2px 5px rgba(0, 0, 0, 0.3), 3px 3px 7px rgba(0, 0, 0, 0.1);
+}
+.header-content p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 20px;
+}
+.buttons button {
+  padding: 0.5rem 1rem;
+  background-color: #6D4F34;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid #f1c40f;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buttons button:hover {
+  background-color: #d10f0f;
+  color: #f1c40f;
+}
+.buttons a {
+  color: #f1c40f;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+}
+.buttons a:hover {
+  color: #f1c40f;
+}
+
+#sobre {
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://previews.123rf.com/images/nuevoimg/nuevoimg2309/nuevoimg230907132/212483860-mesa-de-madeira-vazia-e-cafeteria-desfocam-o-fundo-com-imagem-bokeh.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#sobre h1 {
+  font-family: "Lobster Two", system-ui;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ECB712;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9), 2px 2px 5px rgba(0, 0, 0, 0.3), 3px 3px 7px rgba(0, 0, 0, 0.1);
+  padding-left: 10px;
+  margin: 20px;
+}
+#sobre .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
   padding-left: 20px;
 }
-section button {
-  margin: 20px 10px;
-  padding: 10px;
-  background-color: rgb(207, 52, 52);
-  color: white;
-  border: none;
+#sobre .container .sobre-img img {
+  width: 100%;
+}
+#sobre .sobre-info {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  margin: 20px;
+}
+#sobre h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ECB712;
+  margin-bottom: 1rem;
+  font-family: "Lobster Two", system-ui;
+}
+#sobre p {
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.menu-container {
+  background-image: url("https://img.freepik.com/fotos-premium/piso-de-madeira-vazio-em-pub-ou-restaurante-com-luz-de-fundo-bokeh-foto-de-alta-qualidade_65800-738.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 138vh;
+}
+.menu-container #menu h2 {
+  font-family: "Lobster Two", system-ui;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 20px;
+  color: #ECB712;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9), 2px 2px 5px rgba(0, 0, 0, 0.3), 3px 3px 7px rgba(0, 0, 0, 0.1);
+  padding-left: 10px;
+}
+.menu-container #menu .menu-item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 20px;
+  color: #ECB712;
+  font-family: "Quicksand", sans-serif;
+}
+.menu-container #menu .menu-item h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 20px;
+}
+.menu-container #menu .menu-item figure {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 20px;
   border-radius: 10px;
+  color: #fff;
+  border: solid 1px #ECB712;
+}
+.menu-container #menu .menu-item figure img {
+  height: 20vh;
+  width: 30vh;
 }/*# sourceMappingURL=style.css.map */
