@@ -1,6 +1,5 @@
 #promocoes {
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 1.25rem;
   border-radius: 5px;
   background-color: rgba(208, 190, 190, 0.7);
   height: 100vh;
@@ -8,18 +7,44 @@
   .destaque {
     gap: 5rem;
     margin: 2rem 0;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 
     .destaque-item {
       display: flex;
-      justify-content: space-between;
+      gap: 2rem;
+      align-items: center;
 
-      img {
-        width: 50%;
-        transition: all 0.3s ease;
+      h3 {
+        font-size: 2rem;
+        color: #b9296f;
+        margin: 1rem 0;
+        padding: 1rem;
+      }
 
-        &:hover {
-          transform: scale(1.05);
+      figure {
+        background-color: white;
+        padding: 1rem;
+        border-radius: 5px;
+        text-align: center;
+
+        img {
+          width: 100%;
+          transition: all 0.3s ease;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+
+        figcaption {
+          padding-top: 1rem;
+          font-size: 0.875rem;
+        }
+
+        a {
+          color: #ff007f;
+          font-size: 0.875rem;
+          transition: color 0.3s ease;
+          font-family: cursive;
         }
       }
     }

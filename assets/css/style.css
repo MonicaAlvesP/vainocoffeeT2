@@ -24,7 +24,7 @@
   color: #b9296f;
   margin: 1rem 0;
   padding: 1rem;
-  width: 25%;
+  width: 18%;
 }
 #menu .menu-item figure {
   width: 30%;
@@ -37,10 +37,26 @@
   height: 110px;
   border-radius: 50% 20px;
 }
+#menu .menu-item figure figcaption {
+  font-size: 0.875rem;
+  text-align: center;
+}
+#menu .menu-item figure button {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #b9296f;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#menu .menu-item figure button:hover {
+  background-color: #ff007f;
+}
 
 #promocoes {
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 1.25rem;
   border-radius: 5px;
   background-color: rgba(208, 190, 190, 0.7);
   height: 100vh;
@@ -48,18 +64,40 @@
 #promocoes .destaque {
   gap: 5rem;
   margin: 2rem 0;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 #promocoes .destaque .destaque-item {
   display: flex;
-  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
 }
-#promocoes .destaque .destaque-item img {
-  width: 50%;
+#promocoes .destaque .destaque-item h3 {
+  font-size: 2rem;
+  color: #b9296f;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+#promocoes .destaque .destaque-item figure {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+#promocoes .destaque .destaque-item figure img {
+  width: 100%;
   transition: all 0.3s ease;
 }
-#promocoes .destaque .destaque-item img:hover {
+#promocoes .destaque .destaque-item figure img:hover {
   transform: scale(1.05);
+}
+#promocoes .destaque .destaque-item figure figcaption {
+  padding-top: 1rem;
+  font-size: 0.875rem;
+}
+#promocoes .destaque .destaque-item figure a {
+  color: #ff007f;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+  font-family: cursive;
 }
 
 #sobre {
@@ -105,6 +143,55 @@ span {
   color: #b9296f;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+h2 {
+  padding: 20px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 600px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  tr {
+    margin-bottom: 10px;
+  }
+  td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    padding-left: 10px;
+    font-weight: bold;
+  }
+}
 * {
   margin: 0;
   padding: 0;
