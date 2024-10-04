@@ -1,0 +1,46 @@
+$font-size-medium: 16px;
+$font: Arial, sans-serif;
+$secondary-color: #333;
+$hover-color: #555;
+
+#menu {
+  font-size: $font-size-medium;
+  font-family: $font;
+  color: $secondary-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  &:hover {
+    color: $hover-color;
+  }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 5px;
+    background-color: rgba(208, 190, 190, 0.7);
+
+    h3 {
+      font-size: 1.5rem;
+      color: #b9296f;
+      margin: 1rem 0;
+      padding: 1rem;
+      width: 25%;
+    }
+
+    figure {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      img {
+        width: 120px;
+        height: 110px;
+        border-radius: 50% 20px;
+      }
+    }
+  }
+}

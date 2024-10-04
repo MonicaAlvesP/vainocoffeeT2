@@ -5,78 +5,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../styles/menu.scss">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
     <title>Menu</title>
   </head>
 
   <body>
-    <section id="menu">
-      <nav class="menu-nav">
+    <header>
+      <nav class="navegacao">
         <ul>
           <li><a href="../index.html"><i class="fas fa-coffee"></i></a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="#">Menu</a></li>
           <li><a href="promocoes.html">Promoções</a></li>
+          <li class="tabela-botao">
+            <a href="../pages/tabelaPrecos.html">
+              <i class="fas fa-dollar-sign"></i> Tabela de Preços
+            </a>
+          </li>
         </ul>
-        <button class="price-button">
-          <a href="tabelaPrecos.html">
-            <i class="fas fa-dollar-sign"></i> Tabela de Preços
-          </a>
-        </button>
       </nav>
-      <div class="menu-item">
+    </header>
+    <main id="menu">
+      <section class="menu-item">
         <h3>Cafés</h3>
         <figure>
           <img
-            src="https://static.itdg.com.br/images/auto-auto/a28650d9a16731fcd02b535f3fca1fc8/shutterstock-529515136.jpg">
+            src="https://static.itdg.com.br/images/auto-auto/a28650d9a16731fcd02b535f3fca1fc8/shutterstock-529515136.jpg"
+            alt="Expresso">
           <figcaption>Expresso - R$ 5,00</figcaption>
         </figure>
         <figure>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR5PY5GLtZXM5wFybH2Fosb0DE3jyrjQauoQ&s">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR5PY5GLtZXM5wFybH2Fosb0DE3jyrjQauoQ&s"
+            alt="Latte">
           <figcaption>Latte - R$ 10,00</figcaption>
         </figure>
         <figure>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Cappuccino_at_Sightglass_Coffee.jpg">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Cappuccino_at_Sightglass_Coffee.jpg"
+            alt="Cappuccino">
           <figcaption>Cappuccino - R$ 12,00</figcaption>
         </figure>
-      </div>
-      </div>
-      <div class="menu-item">
+      </section>
+
+      <section class="menu-item">
         <h3>Doces</h3>
         <figure>
-          <img src="https://catracalivre.com.br/wp-content/uploads/2023/08/bolo-cenoura.jpg">
-          <figcaption>Bolo de Cenoura - R$ 6,00</figcaption>
+          <img src="https://t4.ftcdn.net/jpg/09/57/84/19/240_F_957841972_zSRusDp51wGthioViTpNkWgxFS9UB6Bu.jpg" alt="Cupcake de baunilha">
+          <figcaption>Cupcake Vanilla- R$ 6,00</figcaption>
         </figure>
         <figure>
           <img
-            src="https://vitat.com.br/receitas/images/recipeshandler.jpg?id=4882&tipo=r&default=s&ims=fit-in/414x275/filters:quality(60)">
+            src="https://vitat.com.br/receitas/images/recipeshandler.jpg?id=4882&tipo=r&default=s&ims=fit-in/414x275/filters:quality(60)"
+            alt="Brownie">
           <figcaption>Brownie - R$ 7,00</figcaption>
         </figure>
         <figure>
-          <img src="https://www.comidaereceitas.com.br/wp-content/uploads/2021/08/torta_limao_gormet.jpg">
-          <figcaption>Torta de Limão - R$ 8,00</figcaption>
+          <img src="https://as1.ftcdn.net/v2/jpg/08/37/03/86/1000_F_837038676_6j3mhx1CVI0KsZU7rJPsgZKPFbmmq0TB.jpg"
+            alt="Mini Donut">
+          <figcaption>Mini Donut - R$ 3,00</figcaption>
         </figure>
-      </div>
-      <div class="menu-item">
+      </section>
+
+      <section class="menu-item">
         <h3>Gelados</h3>
         <figure>
           <img
-            src="https://media.istockphoto.com/id/681493700/pt/foto/frappuccino-in-takeaway-cup.jpg?s=612x612&w=0&k=20&c=7DL94UGKDV2o77DX3j5J3JZuhdcQ_fIUSHZm3KgaPHI=">
-          <figcaption>Frappé - R$ 15,00</figcaption>
+            src="https://as2.ftcdn.net/v2/jpg/08/65/71/19/1000_F_865711942_s0mVOpCH3DgwmOkqoHMP1WwOmgYAU9cH.jpg"
+            alt="MilkShake">
+          <figcaption>Milkshake - R$ 8,00</figcaption>
         </figure>
         <figure>
           <img
-            src="https://www.guiadasemana.com.br/contentFiles/image/opt_w320h200/2017/01/FEA/53704_cha-de-pessego.jpg">
-          <figcaption>Chá Gelado - R$ 10,00</figcaption>
+            src="https://t4.ftcdn.net/jpg/09/21/01/45/240_F_921014584_FxbjvL2txnigIegJ45uPXKJjCG3fS2lE.jpg"
+            alt="Vanilla ice">
+          <figcaption>Vanilla Ice - R$ 10,00</figcaption>
         </figure>
         <figure>
           <img
-            src="https://www.fannetasticfood.com/wp-content/uploads/2021/09/Berry-Yogurt-Smoothie-FF-featured-image-735x735.jpg">
-          <figcaption>Smoothie - R$ 12,00</figcaption>
+            src="https://as1.ftcdn.net/v2/jpg/08/29/55/48/1000_F_829554897_nEShXDZEe5Yz1jPwt7REK4YECDwzQCzt.jpg"
+            alt="Banana Split">
+          <figcaption>Banana Split - R$ 12,00</figcaption>
         </figure>
-      </div>
-    </section>
+      </section>
+
+      <section class="menu-item">
+        <h3>Combos</h3>
+        <figure>
+          <img
+            src="https://t4.ftcdn.net/jpg/08/03/06/73/240_F_803067320_k9frI53Zw6fPPNNBiIFCnqntT57WMDrl.jpg"
+            alt="Coca-cola, batatas, hambuguer">
+          <figcaption>Combo 1 - R$ 35,00</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://t3.ftcdn.net/jpg/09/68/41/00/240_F_968410057_0QPbuXInwRi3I7QyGlA2aDCFBuJU94r9.jpg"
+            alt="Hamburguer, batatas e milkshake">
+          <figcaption>Combo 2 - R$ 35,00</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://as1.ftcdn.net/v2/jpg/05/84/85/90/1000_F_584859081_4wT3BMCVI4Sz423Q3nKNt26qHAUQxGu8.jpg"
+            alt="Donut com coca-cola">
+          <figcaption>Combo 3 - R$ 15,00</figcaption>
+        </figure>
+      </section>
     </main>
   </body>
 

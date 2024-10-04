@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+#menu {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+#menu:hover {
+  color: #555;
+}
+#menu .menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin: 30px;
+  border-radius: 5px;
+  background-color: rgba(208, 190, 190, 0.7);
+}
+#menu .menu-item h3 {
+  font-size: 1.5rem;
+  color: #b9296f;
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 25%;
+}
+#menu .menu-item figure {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#menu .menu-item figure img {
+  width: 120px;
+  height: 110px;
+  border-radius: 50% 20px;
+}
+
+#promocoes {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: rgba(208, 190, 190, 0.7);
+  height: 100vh;
+}
+#promocoes .destaque {
+  gap: 5rem;
+  margin: 2rem 0;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+#promocoes .destaque .destaque-item {
+  display: flex;
+  justify-content: space-between;
+}
+#promocoes .destaque .destaque-item img {
+  width: 50%;
+  transition: all 0.3s ease;
+}
+#promocoes .destaque .destaque-item img:hover {
+  transform: scale(1.05);
+}
+
+#sobre {
+  background-color: rgba(208, 190, 190, 0.7);
+  padding: 40px;
+  text-align: center;
+}
+#sobre .informacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  margin: 2rem 0;
+}
+#sobre .informacao section {
+  width: 50%;
+}
+#sobre .informacao h3 {
+  font-size: 2rem;
+  color: #b9296f;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+#sobre .informacao p {
+  font-size: 1.25rem;
+  text-align: justify;
+}
+#sobre .informacao figure img {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+#sobre .informacao figure img:hover {
+  transform: scale(1.05);
+}
+#sobre .informacao figure figcaption {
+  padding-top: 1rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+span {
+  font-weight: bold;
+  color: #b9296f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: "Lobster Two", cursive;
+  color: #ff007f;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.navegacao {
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #7e004a;
+}
+.navegacao ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  gap: 5rem;
+}
+.navegacao ul .tabela-botao {
+  background-color: #2d005b;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.navegacao ul a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #ffdd00;
+  transition: color 0.3s ease;
+  font-family: cursive;
+}
+.navegacao ul a:hover {
+  color: #b300b3;
+}
+
+#inicio {
+  position: relative;
+  background: url("https://t3.ftcdn.net/jpg/07/15/18/44/240_F_715184492_QV8pMh3XMKujWXG4jsWsqMlBUEpjaUT4.jpg") center/cover;
+  height: 100vh;
+  z-index: 1;
+}
+#inicio::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+#inicio .pagina-inicial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#inicio .pagina-inicial .titulo-retro {
+  font-family: "Lobster Two", cursive;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  color: #ff007f;
+}
+#inicio .pagina-inicial p {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: cursive;
+  color: white;
+}
+#inicio .pagina-inicial .botoes {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+#inicio .pagina-inicial .botoes a {
+  padding: 10px 20px;
+  background-color: #ffdd00;
+  color: #0077ff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+#inicio .pagina-inicial .botoes a:hover {
+  background-color: #00cc99;
+}/*# sourceMappingURL=style.css.map */

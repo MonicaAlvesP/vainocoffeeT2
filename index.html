@@ -5,45 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Cafeteria Vai no Coffee</title>
   </head>
 
   <body>
     <header>
-      <nav class="menu-nav">
+      <nav class="navegacao">
         <ul>
           <li><a href="../index.html"><i class="fas fa-coffee"></i></a></li>
           <li><a href="./pages/sobre.html">Sobre</a></li>
           <li><a href="./pages/menu.html">Menu</a></li>
           <li><a href="./pages/promocoes.html">Promoções</a></li>
+          <li class="tabela-botao">
+            <a href="./pages/tabelaPrecos.html">
+              <i class="fas fa-dollar-sign"></i> Tabela de Preços
+            </a>
+          </li>
         </ul>
-        <button class="price-button">
-          <a href="./pages/tabelaPrecos.html">
-            <i class="fas fa-dollar-sign"></i> Tabela de Preços
-          </a>
-        </button>
       </nav>
-
-      <section class="content">
-        <h1>Cafeteria Vai no Coffee</h1>
-        <p>
-          Uma pausa para o café, um tempo para você!
-        </p>
-        <div class="buttons">
-          <button>
-            <a href="#menu">
-              <i class="fas fa-book"></i> Menu
-            </a>
-          </button>
-          <button>
-            <a href="#">
-              <i class="fas fa-info-circle"></i> Saber Mais
-            </a>
-          </button>
-        </div>
-      </section>
     </header>
+    <main id="inicio">
+      <section class="pagina-inicial">
+        <h1 class="titulo-retro">Cafeteria Vai no Coffee</h1>
+        <p>Sabor do Passado, Tecnologia do Futuro!</p>
+        <section class="botoes">
+          <a href="#menu">
+            <i class="fas fa-book"></i> Menu
+          </a>
+          <a href="#">
+            <i class="fas fa-info-circle"></i> Saber Mais
+          </a>
+        </section>
+      </section>
+    </main>
   </body>
 
 </html>

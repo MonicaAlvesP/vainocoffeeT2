@@ -1,0 +1,58 @@
+$primary-color: #b9296f;
+$font-size-medium: 1.25rem;
+$font-size-small: 0.875rem;
+$padding-large: 40px;
+$transition: all 0.3s ease;
+
+#sobre {
+  background-color: rgba(208, 190, 190, 0.7);
+  padding: $padding-large;
+  text-align: center;
+
+  .informacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    margin: 2rem 0;
+
+    section {
+      width: 50%;
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: $primary-color;
+      margin: 1rem 0;
+      padding: 1rem;
+    }
+
+    p {
+      font-size: $font-size-medium;
+      text-align: justify;
+    }
+
+    figure {
+
+      img {
+        width: 100%;
+        transition: $transition;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      figcaption {
+        padding-top: 1rem;
+        font-size: $font-size-small;
+        text-align: center;
+      }
+    }
+  }
+}
+
+span {
+  font-weight: bold;
+  color: $primary-color;
+}
